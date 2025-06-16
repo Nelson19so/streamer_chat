@@ -58,16 +58,44 @@ Users can register using their **username** and **phone number**, and will recei
 
 lib/
 ├── main.dart
-├── models/
-├── services/
-├── views/
-│ ├── login/
-│ ├── register/
+├── core/ # Shared app-wide utilities
+│ ├── constants.dart
+│ ├── theme.dart
+│ └── utils.dart
+├── config/ # Config for environment and routing
+│ ├── routes.dart
+│ └── app_config.dart
+├── models/ # Data models (User, Chat, Group, etc)
+│ ├── user_model.dart
+│ ├── chat_model.dart
+│ └── group_model.dart
+├── services/ # API and backend communication
+│ ├── auth_service.dart
+│ ├── chat_service.dart
+│ └── group_service.dart
+├── providers/ # State management (Provider / Riverpod / GetX / BLoC)
+│ ├── auth_provider.dart
+│ ├── chat_provider.dart
+│ └── group_provider.dart
+├── views/ # All UI pages/screens
+│ ├── auth/
+│ │ ├── login_screen.dart
+│ │ ├── register_screen.dart
+│ │ └── welcome_screen.dart
 │ ├── home/
+│ │ └── home_screen.dart
 │ ├── chat/
-│ └── groups/
-├── providers/
-└── utils/
+│ │ ├── chat_screen.dart
+│ │ └── chat_list_screen.dart
+│ ├── groups/
+│ │ ├── group_screen.dart
+│ │ └── create_group_screen.dart
+│ └── profile/
+│ └── profile_screen.dart
+└── widgets/ # Reusable UI widgets
+|\_**\_├── custom_button.dart
+|\_\_**├── custom_input.dart
+|\_\_\_\_└── chat_tile.dart
 
 ---
 

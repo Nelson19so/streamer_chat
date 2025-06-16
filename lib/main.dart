@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:streamer_chat/config/routes.dart';
 
 void main() {
   runApp(const StreamerChat());
@@ -11,7 +12,9 @@ class StreamerChat extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Streamer Chat',
-      home: Scaffold(body: Text('Hello flutter')),
+      initialRoute: AppRoutes.selectUser,
+      onGenerateRoute: AppRoutes.generateRoute,
+      debugShowCheckedModeBanner: false,
     );
   }
 }
