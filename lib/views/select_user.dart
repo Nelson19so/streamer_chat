@@ -10,7 +10,7 @@ class SelectUser extends StatelessWidget {
     return Scaffold(
       body: SafeArea(
         child: Padding(
-          padding: const EdgeInsets.symmetric(vertical: 32, horizontal: 16),
+          padding: const EdgeInsets.symmetric(vertical: 32),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
@@ -38,32 +38,77 @@ class SelectUser extends StatelessWidget {
                 child: SingleChildScrollView(
                   child: Column(
                     children: [
-                      UserTile(
-                        avatar: 'images/Avatar1.png',
-                        name: 'Andrew Jones',
-                        subtitle: 'Stream test account',
+                      Padding(
+                        padding: EdgeInsets.only(right: 16, left: 8),
+                        child: GestureDetector(
+                          onTap: () {
+                            print('hello Andrew');
+                          },
+                          child: UserTile(
+                            avatar: 'images/Avatar1.png',
+                            name: 'Andrew Jones',
+                            subtitle: 'Stream test account',
+                          ),
+                        ),
                       ),
-                      UserTile(
-                        avatar: 'images/Avatar2.png',
-                        name: 'Jane Doe',
-                        subtitle: 'Stream test account',
+                      Padding(
+                        padding: EdgeInsets.only(right: 16, left: 8),
+                        child: GestureDetector(
+                          onTap: () {
+                            print('John Doe');
+                          },
+                          child: UserTile(
+                            avatar: 'images/Avatar2.png',
+                            name: 'Jane Doe',
+                            subtitle: 'Stream test account',
+                          ),
+                        ),
                       ),
-                      UserTile(
-                        avatar: 'images/Avatar3.png',
-                        name: 'Bryce Mosley',
-                        subtitle: 'Stream test account',
+
+                      Padding(
+                        padding: EdgeInsets.only(right: 16, left: 8),
+                        child: GestureDetector(
+                          onTap: () {
+                            print('Bryce Mosley');
+                          },
+                          child: UserTile(
+                            avatar: 'images/Avatar3.png',
+                            name: 'Bryce Mosley',
+                            subtitle: 'Stream test account',
+                          ),
+                        ),
                       ),
-                      UserTile(
-                        avatar: 'images/Avatar4.png',
-                        name: 'Dona l Lundee jnr',
-                        subtitle: 'Stream test account',
+
+                      Padding(
+                        padding: EdgeInsets.only(right: 16, left: 8),
+                        child: GestureDetector(
+                          onTap: () {
+                            print('Donal Lundee jnr');
+                          },
+                          child: UserTile(
+                            avatar: 'images/Avatar4.png',
+                            name: 'Donal Lundee jnr',
+                            subtitle: 'Stream test account',
+                          ),
+                        ),
                       ),
-                      UserTile(
-                        avatar: 'images/Avatar5.png',
-                        name: 'Hanako Arasara',
-                        subtitle: 'Stream test account',
+                      Padding(
+                        padding: EdgeInsets.only(right: 16, left: 8),
+                        child: GestureDetector(
+                          onTap: () {
+                            print('Hanako Arasara');
+                          },
+                          child: UserTile(
+                            avatar: 'images/Avatar5.png',
+                            name: 'Hanako Arasara',
+                            subtitle: 'Stream test account',
+                          ),
+                        ),
                       ),
-                      const SettingsTile(),
+                      Padding(
+                        padding: EdgeInsets.only(right: 16, left: 8),
+                        child: const SettingsTile(),
+                      ),
                     ],
                   ),
                 ),
