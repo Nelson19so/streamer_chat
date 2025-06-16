@@ -55,7 +55,7 @@ Users can register using their **username** and **phone number**, and will recei
 ---
 
 ## 📦 Project Structure (Flutter)
-
+```
 lib/
 ├── main.dart
 ├── core/ # Shared app-wide utilities
@@ -96,7 +96,7 @@ lib/
 |\_**\_├── custom_button.dart
 |\_\_**├── custom_input.dart
 |\_\_\_\_└── chat_tile.dart
-
+```
 ---
 
 ## 🌐 API Endpoints (Backend - Django)
