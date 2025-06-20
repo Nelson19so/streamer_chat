@@ -9,11 +9,16 @@ class LoginScreen extends StatelessWidget {
       appBar: AppBar(title: Text('App bar'), centerTitle: false, actions: []),
       body: Center(
         child: SizedBox(
-          child: ElevatedButton(
-            onPressed: () {
-              Navigator.of(context).pushReplacementNamed('/register');
-            },
-            child: const Text('Register'),
+          child: Column(
+            children: [
+              Text('login screen'),
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.of(context).pushReplacementNamed('/register');
+                },
+                child: const Text('Register'),
+              ),
+            ],
           ),
         ),
       ),
