@@ -1,6 +1,6 @@
 # 📱 Streamer Chat
 
-A lightweight, secure, and real-time mobile chat application built with **Flutter** for Android and iOS.  
+A lightweight, secure, and real-time mobile chat application built with **Flutter** for Android and iOS and Django-rest-framework (DRF) for the backend api server.
 Users can register using their **username** and **phone number**, and will receive a **unique user ID** to log in. No passwords involved.
 
 ---
@@ -55,6 +55,7 @@ Users can register using their **username** and **phone number**, and will recei
 ---
 
 ## 📦 Project Structure (Flutter)
+
 ```
 lib/
 ├── main.dart
@@ -97,6 +98,7 @@ lib/
 |\_\_**├── custom_input.dart
 |\_\_\_\_└── chat_tile.dart
 ```
+
 ---
 
 ## 🌐 API Endpoints (Backend - Django)
