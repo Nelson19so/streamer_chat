@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 import 'package:streamer_chat/components/header/channel_appbar.dart';
 
 class Channel extends StatelessWidget {
@@ -7,9 +8,9 @@ class Channel extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
+      appBar: ChannelAppbar(title: 'Channel'),
       drawer: Drawer(),
-      body: Center(child: Text('Channel Screen')),
+      body: Center(child: const Text('Channel Screen')),
     );
   }
 }
